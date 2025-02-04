@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Russo+One&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 20px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  max-width: 541px;
+  height: 527px;
+}
+
+.card_front,
+.card_back {
+  position: absolute;
+  width: 100%;
+  max-width: 447px;
+  height: 245px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.card_front {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 139px 32px 26px 32px;
+}
+
+.card_back {
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 111px 57px;
+  z-index: -1;
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  font-family: "Space Grotesk";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cardnumber {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (XL) */
+  font-family: "Space Grotesk";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.422px;
+  text-align: center;
+}
+.nameanddate {
+  display: flex;
+  justify-content: space-between;
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Body (L) */
+  font-family: "Space Grotesk";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  max-width: 381px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  color: var(--Deep-Violet, #21092f);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Body (M) */
+  font-family: "Space Grotesk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.child {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dates {
+  display: flex;
+  gap: 10px;
+}
+
+.largest {
+  width: 100%;
+}
+
+.mid {
+  width: 100%;
+  max-width: 191px;
+}
+
+.smallest {
+  width: 100%;
+  max-width: 80px;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid var(--Light-Grey, #dfdee0);
+  background: var(--White, #fff);
+  padding: 11px 16px;
+}
+input::placeholder {
+  text-align: left;
+}
+button {
+  margin-top: 14px;
+  width: 100%;
+  height: 53px;
+
+  border-radius: 8px;
+  border: none;
+  background: var(--Deep-Violet, #21092f);
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (L) */
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 381px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text > h1 {
+  color: var(--Deep-Violet, #21092f);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (XL) */
+  font-family: "Space Grotesk";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.422px;
+}
+
+.text > p {
+  color: var(--Purplish-Grey, #8f8694);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (L) */
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.error {
+  color: var(--Red, #ff5050);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Body (S) */
+  font-family: "Space Grotesk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.error-outline {
+  outline: 1px solid #ff5050;
+}
+
+@media (max-width: 890px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .cards {
+    max-width: 343px;
+    height: 251px;
+  }
+
+  .card_front,
+  .card_back {
+    max-width: 286px;
+    height: 156px;
+  }
+
+  .card_front {
+    top: calc(100% - 156px);
+    left: 0;
+    padding: 84px 20px 20px 20px;
+  }
+
+  .card_back {
+    top: 0;
+    right: 0;
+    padding: 73px 37px;
+  }
+
+  .cardnumber {
+    color: var(--White, #fff);
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.2px;
+  }
+
+  .nameanddate {
+    color: var(--White, #fff);
+    font-family: "Space Grotesk";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+  }
+
+  .card_back {
+    color: var(--White, #fff);
+    font-family: "Space Grotesk";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+  }
+}
